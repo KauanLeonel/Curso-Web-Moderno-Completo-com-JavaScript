@@ -5,7 +5,7 @@ aluno, suas três notas, a média calculada e uma mensagem "APROVADO" se a médi
 
 let n1 = 7, n2 = 5, n3 = 6;
 
-function media(n1,n2,n3){
+function media(cod, n1,n2,n3){
     let maior = n1, media = n2, media2 = n3
     if (n2 > n1 && n2 > n3){
         maior = n2
@@ -17,6 +17,6 @@ function media(n1,n2,n3){
         }
     }
     mediaFinal = ((maior*4) + (media*3) + (media2 *3))/10
-    return mediaFinal
+    console.log (`${cod}, Nota 1: ${n1}; Nota 2: ${n2};Nota 3: ${n3}; A media final é: ${mediaFinal}. ${mediaFinal < 5? "Reprovado": "Aprovado"}}`)
 }
-console.log(`Nota 1: ${n1}; Nota 2: ${n2};Nota 3: ${n3}; A media final é: ${media(n1,n2,n3)}`)
+media(143, n1, n2, n3)
