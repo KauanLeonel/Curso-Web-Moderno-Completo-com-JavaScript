@@ -22,4 +22,6 @@ function escolha (carro){
 
 escolha('Hatch')
 escolha("Sedans")
-escolha(`Honda`)
+escolha(`Honda`
+    
+)
